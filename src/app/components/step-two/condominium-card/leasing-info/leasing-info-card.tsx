@@ -6,8 +6,8 @@ import LeasingInfoForm from "./leasing-info-form";
 type LeasingInfo = {
   managerName: string;
   phone: string;
-  email: number;
-  isAgree: number; //checkbox
+  email: string;
+  isAgree: boolean; //checkbox
 };
 
 export default function LeasingInfoCard() {
@@ -45,7 +45,6 @@ export default function LeasingInfoCard() {
           }}
           content={
             <LeasingInfoForm
-              hasFormValues={hasFormValues}
               initialData={formData}
               setFormData={setFormData}
               closeModal={handleClose}

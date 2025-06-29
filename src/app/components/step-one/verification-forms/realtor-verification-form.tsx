@@ -20,7 +20,7 @@ interface RealtorVerificationFormProps {
 type FormValues = {
   lenience: string;
   additional?: FileList | undefined;
-  agreement: FileList | undefinede;
+  agreement: FileList | undefined;
   isAgreed: boolean;
 };
 

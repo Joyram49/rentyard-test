@@ -22,7 +22,7 @@ interface AgreementFormProps {
   initialData: Agreement;
   setFormData: (data: Agreement) => void;
   closeModal: () => void;
-  hasFormValues: boolean;
+  hasFormValues?: boolean;
 }
 
 export default function AgreementForm({

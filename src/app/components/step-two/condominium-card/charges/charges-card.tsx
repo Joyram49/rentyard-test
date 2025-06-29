@@ -37,7 +37,6 @@ export default function ChargesCard() {
           }}
           content={
             <ChargesForm
-              hasFormValues={hasFormValues}
               initialData={formData}
               setFormData={setFormData}
               closeModal={handleClose}

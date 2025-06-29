@@ -32,8 +32,8 @@ interface RentPaymentFormProps {
   hasFormValues?: boolean;
   initialData?: {
     frequency: string;
-    rentReminderDate: Date | null;
-    rentDueDate: Date | null;
+    rentReminderDate: string | null;
+    rentDueDate: string | null;
   };
   setFormData: (data: FormValues) => void;
   closeModal: () => void;
@@ -52,10 +52,10 @@ export default function RentPaymentForm({
       ? {
           frequency: initialData.frequency || "",
           rentReminderDate: initialData.rentReminderDate
-            ? initialData.rentReminderDate.toISOString().slice(0, 10)
+            ? initialData.rentReminderDate.toString().slice(0, 10)
             : "",
           rentDueDate: initialData.rentDueDate
-            ? initialData.rentDueDate.toISOString().slice(0, 10)
+            ? initialData.rentDueDate.toString().slice(0, 10)
             : "",
         }
       : {
@@ -70,10 +70,10 @@ export default function RentPaymentForm({
       form.reset({
         frequency: initialData.frequency || "",
         rentReminderDate: initialData.rentReminderDate
-          ? initialData.rentReminderDate.toISOString().slice(0, 10)
+          ? initialData.rentReminderDate.toString().slice(0, 10)
           : "",
         rentDueDate: initialData.rentDueDate
-          ? initialData.rentDueDate.toISOString().slice(0, 10)
+          ? initialData.rentDueDate.toString().slice(0, 10)
           : "",
       });
     }
@@ -84,10 +84,8 @@ export default function RentPaymentForm({
   const onSubmit = (data: FormValues) => {
     setFormData({
       frequency: data.frequency,
-      rentReminderDate: data.rentReminderDate
-        ? new Date(data.rentReminderDate)
-        : null,
-      rentDueDate: data.rentDueDate ? new Date(data.rentDueDate) : null,
+      rentReminderDate: data.rentReminderDate ? data.rentReminderDate : "",
+      rentDueDate: data.rentDueDate ? data.rentDueDate : "",
     });
     closeModal();
     form.reset();

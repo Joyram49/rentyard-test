@@ -1,6 +1,7 @@
 "use client";
 import { useProperty } from "@/hooks/useProperty";
 import { useValidForm } from "@/hooks/useValidForm";
+import Image from "next/image";
 import { useState } from "react";
 import SelectableCards from "./selectable-cards";
 import CompanyForm from "./verification-forms/company-form";
@@ -101,7 +102,18 @@ export default function PropertyOwner() {
               <SelectableCards
                 key={property.id}
                 description={property.description}
-                icon={property.icon}
+                icon={
+                  typeof property.icon === "string" ? (
+                    <Image
+                      src={property.icon}
+                      alt={property.title}
+                      width={28}
+                      height={28}
+                    />
+                  ) : (
+                    property.icon
+                  )
+                }
                 title={property.title}
                 value={property.value}
                 selected={selectedType === property.value}
@@ -119,7 +131,18 @@ export default function PropertyOwner() {
               <SelectableCards
                 key={role.id}
                 description={role.description}
-                icon={role.icon}
+                icon={
+                  typeof role.icon === "string" ? (
+                    <Image
+                      src={role.icon}
+                      alt={role.title}
+                      width={28}
+                      height={28}
+                    />
+                  ) : (
+                    role.icon
+                  )
+                }
                 title={role.title}
                 value={role.value}
                 selected={selectedRole === role.value}

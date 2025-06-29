@@ -5,8 +5,8 @@ import RentPaymentForm from "./rent-payment-form";
 
 type RentPayment = {
   frequency: string; // will be a select box with options like "Monthly", "Quarterly", "Yearly" etc.
-  rentReminderDate: Date | null;
-  rentDueDate: number | null;
+  rentReminderDate: string | null;
+  rentDueDate: string | null;
 };
 
 export default function RendPaymentCard() {
@@ -70,12 +70,11 @@ export default function RendPaymentCard() {
                 Rent payment frequency: {formData.frequency}, Rent reminder
                 date:{" "}
                 {formData.rentReminderDate &&
-                  `${formData.rentReminderDate.getDate()}th every month`}
+                  `${formData.rentReminderDate} every month`}
               </p>
               <p className='text-[#272B35] text-base font-[600]'>
                 Rent due date:{" "}
-                {formData.rentDueDate &&
-                  `${formData.rentDueDate.getDate()}th every month`}
+                {formData.rentDueDate && `${formData.rentDueDate} every month`}
               </p>
             </div>
           </div>
