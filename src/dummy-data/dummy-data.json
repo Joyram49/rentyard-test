@@ -1,0 +1,286 @@
+{
+  "countries": [
+    { "id": 1, "name": "United States", "code": "US" },
+    { "id": 2, "name": "Canada", "code": "CA" },
+    { "id": 3, "name": "United Kingdom", "code": "UK" },
+    { "id": 4, "name": "Australia", "code": "AU" },
+    { "id": 5, "name": "Germany", "code": "DE" },
+    { "id": 6, "name": "France", "code": "FR" },
+    { "id": 7, "name": "Japan", "code": "JP" },
+    { "id": 8, "name": "India", "code": "IN" }
+  ],
+  "states": {
+    "US": [
+      { "id": 1, "name": "California", "code": "CA" },
+      { "id": 2, "name": "New York", "code": "NY" },
+      { "id": 3, "name": "Texas", "code": "TX" },
+      { "id": 4, "name": "Florida", "code": "FL" },
+      { "id": 5, "name": "Illinois", "code": "IL" },
+      { "id": 6, "name": "Pennsylvania", "code": "PA" },
+      { "id": 7, "name": "Ohio", "code": "OH" },
+      { "id": 8, "name": "Georgia", "code": "GA" }
+    ],
+    "CA": [
+      { "id": 1, "name": "Ontario", "code": "ON" },
+      { "id": 2, "name": "Quebec", "code": "QC" },
+      { "id": 3, "name": "British Columbia", "code": "BC" },
+      { "id": 4, "name": "Alberta", "code": "AB" },
+      { "id": 5, "name": "Manitoba", "code": "MB" }
+    ],
+    "UK": [
+      { "id": 1, "name": "England", "code": "ENG" },
+      { "id": 2, "name": "Scotland", "code": "SCT" },
+      { "id": 3, "name": "Wales", "code": "WLS" },
+      { "id": 4, "name": "Northern Ireland", "code": "NIR" }
+    ],
+    "AU": [
+      { "id": 1, "name": "New South Wales", "code": "NSW" },
+      { "id": 2, "name": "Victoria", "code": "VIC" },
+      { "id": 3, "name": "Queensland", "code": "QLD" },
+      { "id": 4, "name": "Western Australia", "code": "WA" },
+      { "id": 5, "name": "South Australia", "code": "SA" }
+    ],
+    "DE": [
+      { "id": 1, "name": "Bavaria", "code": "BY" },
+      { "id": 2, "name": "North Rhine-Westphalia", "code": "NW" },
+      { "id": 3, "name": "Baden-Württemberg", "code": "BW" },
+      { "id": 4, "name": "Lower Saxony", "code": "NI" }
+    ],
+    "FR": [
+      { "id": 1, "name": "Île-de-France", "code": "IDF" },
+      { "id": 2, "name": "Auvergne-Rhône-Alpes", "code": "ARA" },
+      { "id": 3, "name": "Nouvelle-Aquitaine", "code": "NAQ" },
+      { "id": 4, "name": "Occitanie", "code": "OCC" }
+    ],
+    "JP": [
+      { "id": 1, "name": "Tokyo", "code": "TKY" },
+      { "id": 2, "name": "Osaka", "code": "OSK" },
+      { "id": 3, "name": "Kanagawa", "code": "KNG" },
+      { "id": 4, "name": "Aichi", "code": "AIC" }
+    ],
+    "IN": [
+      { "id": 1, "name": "Maharashtra", "code": "MH" },
+      { "id": 2, "name": "Uttar Pradesh", "code": "UP" },
+      { "id": 3, "name": "Tamil Nadu", "code": "TN" },
+      { "id": 4, "name": "Karnataka", "code": "KA" }
+    ]
+  },
+  "cities": {
+    "CA": [
+      { "id": 1, "name": "Los Angeles" },
+      { "id": 2, "name": "San Francisco" },
+      { "id": 3, "name": "San Diego" },
+      { "id": 4, "name": "Sacramento" }
+    ],
+    "NY": [
+      { "id": 1, "name": "New York City" },
+      { "id": 2, "name": "Buffalo" },
+      { "id": 3, "name": "Rochester" },
+      { "id": 4, "name": "Albany" }
+    ],
+    "TX": [
+      { "id": 1, "name": "Houston" },
+      { "id": 2, "name": "Dallas" },
+      { "id": 3, "name": "Austin" },
+      { "id": 4, "name": "San Antonio" }
+    ],
+    "FL": [
+      { "id": 1, "name": "Miami" },
+      { "id": 2, "name": "Orlando" },
+      { "id": 3, "name": "Tampa" },
+      { "id": 4, "name": "Jacksonville" }
+    ],
+    "IL": [
+      { "id": 1, "name": "Chicago" },
+      { "id": 2, "name": "Springfield" },
+      { "id": 3, "name": "Peoria" }
+    ],
+    "PA": [
+      { "id": 1, "name": "Philadelphia" },
+      { "id": 2, "name": "Pittsburgh" },
+      { "id": 3, "name": "Harrisburg" }
+    ],
+    "OH": [
+      { "id": 1, "name": "Columbus" },
+      { "id": 2, "name": "Cleveland" },
+      { "id": 3, "name": "Cincinnati" }
+    ],
+    "GA": [
+      { "id": 1, "name": "Atlanta" },
+      { "id": 2, "name": "Savannah" },
+      { "id": 3, "name": "Athens" }
+    ],
+    "ON": [
+      { "id": 1, "name": "Toronto" },
+      { "id": 2, "name": "Ottawa" },
+      { "id": 3, "name": "Mississauga" }
+    ],
+    "QC": [
+      { "id": 1, "name": "Montreal" },
+      { "id": 2, "name": "Quebec City" },
+      { "id": 3, "name": "Laval" }
+    ],
+    "BC": [
+      { "id": 1, "name": "Vancouver" },
+      { "id": 2, "name": "Victoria" },
+      { "id": 3, "name": "Surrey" }
+    ],
+    "AB": [
+      { "id": 1, "name": "Calgary" },
+      { "id": 2, "name": "Edmonton" },
+      { "id": 3, "name": "Red Deer" }
+    ],
+    "MB": [
+      { "id": 1, "name": "Winnipeg" },
+      { "id": 2, "name": "Brandon" },
+      { "id": 3, "name": "Steinbach" }
+    ],
+    "ENG": [
+      { "id": 1, "name": "London" },
+      { "id": 2, "name": "Manchester" },
+      { "id": 3, "name": "Birmingham" }
+    ],
+    "SCT": [
+      { "id": 1, "name": "Edinburgh" },
+      { "id": 2, "name": "Glasgow" },
+      { "id": 3, "name": "Aberdeen" }
+    ],
+    "WLS": [
+      { "id": 1, "name": "Cardiff" },
+      { "id": 2, "name": "Swansea" },
+      { "id": 3, "name": "Newport" }
+    ],
+    "NIR": [
+      { "id": 1, "name": "Belfast" },
+      { "id": 2, "name": "Derry" },
+      { "id": 3, "name": "Lisburn" }
+    ],
+    "NSW": [
+      { "id": 1, "name": "Sydney" },
+      { "id": 2, "name": "Newcastle" },
+      { "id": 3, "name": "Wollongong" }
+    ],
+    "VIC": [
+      { "id": 1, "name": "Melbourne" },
+      { "id": 2, "name": "Geelong" },
+      { "id": 3, "name": "Ballarat" }
+    ],
+    "QLD": [
+      { "id": 1, "name": "Brisbane" },
+      { "id": 2, "name": "Gold Coast" },
+      { "id": 3, "name": "Townsville" }
+    ],
+    "WA": [
+      { "id": 1, "name": "Perth" },
+      { "id": 2, "name": "Fremantle" },
+      { "id": 3, "name": "Rockingham" }
+    ],
+    "SA": [
+      { "id": 1, "name": "Adelaide" },
+      { "id": 2, "name": "Mount Gambier" },
+      { "id": 3, "name": "Whyalla" }
+    ],
+    "BY": [
+      { "id": 1, "name": "Munich" },
+      { "id": 2, "name": "Nuremberg" },
+      { "id": 3, "name": "Augsburg" }
+    ],
+    "NW": [
+      { "id": 1, "name": "Cologne" },
+      { "id": 2, "name": "Düsseldorf" },
+      { "id": 3, "name": "Dortmund" }
+    ],
+    "BW": [
+      { "id": 1, "name": "Stuttgart" },
+      { "id": 2, "name": "Karlsruhe" },
+      { "id": 3, "name": "Mannheim" }
+    ],
+    "NI": [
+      { "id": 1, "name": "Hanover" },
+      { "id": 2, "name": "Braunschweig" },
+      { "id": 3, "name": "Oldenburg" }
+    ],
+    "IDF": [
+      { "id": 1, "name": "Paris" },
+      { "id": 2, "name": "Versailles" },
+      { "id": 3, "name": "Saint-Denis" }
+    ],
+    "ARA": [
+      { "id": 1, "name": "Lyon" },
+      { "id": 2, "name": "Grenoble" },
+      { "id": 3, "name": "Saint-Étienne" }
+    ],
+    "NAQ": [
+      { "id": 1, "name": "Bordeaux" },
+      { "id": 2, "name": "Limoges" },
+      { "id": 3, "name": "Poitiers" }
+    ],
+    "OCC": [
+      { "id": 1, "name": "Toulouse" },
+      { "id": 2, "name": "Montpellier" },
+      { "id": 3, "name": "Nîmes" }
+    ],
+    "TKY": [
+      { "id": 1, "name": "Tokyo" },
+      { "id": 2, "name": "Yokohama" },
+      { "id": 3, "name": "Kawasaki" }
+    ],
+    "OSK": [
+      { "id": 1, "name": "Osaka" },
+      { "id": 2, "name": "Kobe" },
+      { "id": 3, "name": "Kyoto" }
+    ],
+    "KNG": [
+      { "id": 1, "name": "Yokohama" },
+      { "id": 2, "name": "Kawasaki" },
+      { "id": 3, "name": "Sagamihara" }
+    ],
+    "AIC": [
+      { "id": 1, "name": "Nagoya" },
+      { "id": 2, "name": "Toyota" },
+      { "id": 3, "name": "Okazaki" }
+    ],
+    "MH": [
+      { "id": 1, "name": "Mumbai" },
+      { "id": 2, "name": "Pune" },
+      { "id": 3, "name": "Nagpur" }
+    ],
+    "UP": [
+      { "id": 1, "name": "Lucknow" },
+      { "id": 2, "name": "Kanpur" },
+      { "id": 3, "name": "Varanasi" }
+    ],
+    "TN": [
+      { "id": 1, "name": "Chennai" },
+      { "id": 2, "name": "Coimbatore" },
+      { "id": 3, "name": "Madurai" }
+    ],
+    "KA": [
+      { "id": 1, "name": "Bangalore" },
+      { "id": 2, "name": "Mysore" },
+      { "id": 3, "name": "Hubli" }
+    ]
+  },
+  "communityAmenities": [
+    { "id": 1, "name": "Swimming Pool", "icon": "/pool.svg" },
+    { "id": 2, "name": "Gym", "icon": "/dumbbell.svg" },
+    { "id": 3, "name": "Playground", "icon": "/playground.svg" },
+    { "id": 4, "name": "Parking", "icon": "/parking.svg" },
+    { "id": 5, "name": "24/7 Security", "icon": "/security.svg" },
+    { "id": 6, "name": "Elevator", "icon": "/elevator.svg" },
+    { "id": 7, "name": "Garden", "icon": "/garden.svg" },
+    { "id": 8, "name": "Clubhouse", "icon": "/clubhouse.svg" },
+    { "id": 9, "name": "Laundry Room", "icon": "/laundry.svg" },
+    { "id": 10, "name": "Pet Area", "icon": "/pet-area.svg" },
+    { "id": 11, "name": "BBQ Area", "icon": "/bbq.svg" },
+    { "id": 12, "name": "Library", "icon": "/library.svg" },
+    { "id": 13, "name": "Basketball Court", "icon": "/basketball-court.svg" },
+    { "id": 14, "name": "Business Center", "icon": "/business-center.svg" },
+    { "id": 15, "name": "Concierge", "icon": "/concierge.svg" },
+    { "id": 16, "name": "Rooftop Terrace", "icon": "/rooftop.svg" },
+    { "id": 17, "name": "Game Room", "icon": "/game-room.svg" },
+    { "id": 18, "name": "Sauna", "icon": "/sauna.svg" },
+    { "id": 19, "name": "Movie Theater", "icon": "/movie-theater.svg" },
+    { "id": 20, "name": "Guest Suites", "icon": "/guest-suites.svg" }
+  ]
+}

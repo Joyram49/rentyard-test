@@ -1,15 +1,16 @@
+import FormStepProvider from "@/provider/FormStepProvider";
+import PropertyProvider from "@/provider/PropertyProvider";
+import ValidFormProvider from "@/provider/ValidFormProvider";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fustat } from "next/font/google";
+import Footer from "./components/footer";
+import Header from "./components/header";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const fustat = Fustat({
+  variable: "--font-fustat",
+  subsets: ["arabic"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -23,11 +24,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html lang='en'>
+      <body className={`${fustat.variable} antialiased`}>
+        <FormStepProvider>
+          <ValidFormProvider>
+            <PropertyProvider>
+              <Header />
+              {children}
+              <Footer />
+            </PropertyProvider>
+          </ValidFormProvider>
+        </FormStepProvider>
       </body>
     </html>
   );
